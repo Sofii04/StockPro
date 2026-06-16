@@ -48,6 +48,10 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    // Dependencia para usar navegación entre pantallas con Jetpack Compose
+    implementation("androidx.navigation:navigation-compose:2.9.8")
+    // Dependencia para usar ViewModel dentro de pantallas Composable
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -55,4 +59,5 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
 }
